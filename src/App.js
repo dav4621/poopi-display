@@ -1,22 +1,14 @@
-import logo from './logo.svg';
+import logo from './poopi.png';
 import './App.css';
+import GetRequest from './components/GetRequest';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>pooPi<img src={logo} className="App-logo" alt="logo" /></h1>
+        <p>Because we shouldn't have to smell it...</p>
+        <GetRequest />
       </header>
     </div>
   );
